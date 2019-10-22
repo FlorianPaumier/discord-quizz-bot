@@ -135,5 +135,124 @@
             "oui"
         ],
         "explanation": "Et oui ! On peut mettre des commentaires HTML en JavaScript ! Et il font partie de la spécification ECMAScript depuis l'époque des navigateurs comme Netscape qui ne supportait pas encore la balise `<script>`. Plus d'infos ici (attention, long document, spécification complète) https://www.ecma-international.org/ecma-262/#sec-html-like-comments"
+    },
+    {
+        "texte": "[PHP] En supposant que le dossier « src » est la racine du projet. Quelle sera la ligne de code pour définir le namespace de la classe : src/Lib/Lexik/Foo.php",
+        "answers": [
+            "namespace Lib\\Lexik"
+        ],
+        "explanation": ""
+    },
+    {
+        "texte": "[PHP] Avec les namespaces comment peut-on créer une instance de la classe Demo\\Lib\\Foo ?",
+        "answers": [
+            "use Demo\\Lib\\Foo; $foo = new Foo();",
+            "$foo = new \\Demo\\Lib\\Foo()"
+        ],
+        "explanation": ""
+    },
+    {
+        "texte": "[PHP] Dans quelle version de PHP les traits ont-ils été ajoutés ?",
+        "answers": [
+            "5.4"
+        ],
+        "explanation": ""
+    },
+    {
+        "texte": "[SF] Quelle est la classe de Response que doit retourner un contrôler (une action) Symfony ? ",
+        "answers": [
+            "Symfony\\Component\\HttpFoundation\\Response"
+        ],
+        "explanation": ""
+    },
+    {
+        "texte": "[SF] Quel évènement est utilisé pour éxécuter du code après réception de la réponse par l’utilisateur ?",
+        "answers": [
+            "kernel.terminate"
+        ],
+        "explanation": ""
+    },
+    {
+        "texte": "Avec le moteur de template Twig, en supposant que l’on passe au template une variable « user » qui a pour valeur array(‘name’ => ‘foo’, ‘age’ => 20), quelles sont les syntaxes valides pour afficher le nom et l’âge ?",
+        "answers": [
+            "<p>{{ user.name }} {{ user.age }}</p>",
+            " <p>{{ user['name'] }} {{ user['age'] }}</p>"
+        ],
+        "explanation": ""
+    },
+    {
+        "texte": "[SF] Dans une application Symfony par quel nom pourra-t-on charger le template : app/Resources/views/layout.html.twig ?",
+        "answers": [
+            "::layout.html.twig"
+        ],
+        "explanation": ""
+    },
+    {
+        "texte": "[SF] Comment mettre en cache un fragment d’une page ?",
+        "answers": [
+            "en activant l'utilisation des tags ESI"
+        ],
+        "explanation": ""
+    },
+    {
+        "texte": "[SF] Avec la syntaxe XML comment injecter le service « doctrine » ?",
+        "answers": ["<argument type=\"service\" id=\"doctrine\" />"],
+        "explanation": ""
+    },
+    {
+        "texte": "[SF] Depuis un contrôleur Symfony, par quel moyen peut-on faire une redirection ?",
+        "answers": [
+            "return new RedirectResponse('/home');",
+            "return $this->redirect('/home');"
+        ],
+        "explanation": ""
+    },
+    {
+        "texte": "[SF] Par défaut, dans quel fichier se trouvent les paramètres globaux de configuration ? ",
+        "answers": ["app/config/parameters.yml"],
+        "explanation": ""
+    },
+    {
+        "texte": "[SF] Quelle commande Symfony permet de lister tous les services de l’application ? ",
+        "answers": ["debug:container"],
+        "explanation": ""
+    },
+    {
+        "texte": "[SF] Par défaut, dans quel fichier se trouve la configuration de la sécurité dans une application Symfony ? ",
+        "answers": ["app/config/security.yml"],
+        "explanation": ""
+    },
+    {
+        "texte": "[SF] Dans un template Twig, comment peut-on traduire la chaine de caractère « Super licorne » ? ",
+        "answers": [
+            "{{ 'Super licorne' | trans }}",
+            "{{ 'Super licorne' | trans({}, 'frontend', 'fr') }}"
+        ],
+        "explanation": ""
+    },
+    {
+        "texte": "[SF] Dans un type de formulaire quelle méthode permet de définir la liste des champs du formulaire ? ",
+        "answers": ["buildForm() "],
+        "explanation": ""
+    },
+    {
+        "texte": "[SF] Quelle contrainte de validation peut-on utiliser pour vérifier qu’une valeur n’est pas une chaine vide ? ",
+        "answers": ["NotBlank()"],
+        "explanation": ""
+    },
+    {
+        "texte": "[Doctrine] Sur une entité Doctrine, en utilisant les annotations, quelle annotation permet de définir que la propriété est une clé primaire ? ",
+        "answers": ["@ORM\\Id()"],
+        "explanation": ""
+    },
+    {
+        "texte": "[Doctrine] Sur l’entity manager de Doctrine quelle méthode permet de prendre en compte une nouvelle entité à sauvegarder ?",
+        "answers": ["persist()"],
+        "explanation": ""
+    },
+    {
+        "texte": "[Doctrine] Sur une entité Doctrine comment peut-on définir la classe de repository associée ?",
+        "answers": ["@ORM\\Entity(repositoryClass=\"AppBundle\\Entity\\FooRepository\") "],
+        "explanation": ""
     }
 ]
